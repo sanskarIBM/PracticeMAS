@@ -1,0 +1,15 @@
+neo4j
+chromadb
+selenium
+playwright
+allure-pytest
+github3.py
+pytest
+torch
+transformers
+ray
+spacy
+networkx
+flask
+fastapi
+uvicorn

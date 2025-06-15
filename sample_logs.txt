@@ -1,0 +1,3 @@
+2025-06-15 10:00:01,001 - test_login - ERROR - AssertionError: Login button not found
+2025-06-15 10:00:02,002 - test_signup - ERROR - TimeoutError: Signup page did not load
+2025-06-15 10:00:03,003 - test_logout - INFO - Test passed
