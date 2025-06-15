@@ -1,4 +1,4 @@
-# High-Level & In-Depth Architecture: Multi-Agent AI Self-Healing System
+# Architecture: Multi-Agent AI Self-Healing System
 
 ```mermaid
 graph TD
@@ -93,5 +93,5 @@ graph TD
 - **GitHub API**: For automated code changes and PRs.
 - **FastAPI/Flask**: (Optional) For exposing the system as a service.
 
----
-This architecture enables a fully automated, self-healing test pipeline with minimal human intervention, leveraging multi-agent AI, knowledge graphs, and LLMs for robust, scalable automation.
+# Outcome
+A fully automated, self-healing test pipeline with minimal human intervention, leveraging multi-agent AI, knowledge graphs, and LLMs for robust, scalable automation.
