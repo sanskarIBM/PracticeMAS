@@ -8,18 +8,18 @@ graph TD
         A3[Test Reports & Logs]
     end
     subgraph Multi-Agent Orchestration
-        B1[Finder Agent\n(LLM)]
-        B2[Detector Agent\n(LLM + Neo4j)]
-        B3[Investigator Agent\n(LLM + Diff/DOM)]
-        B4[Solution Provider Agent\n(LLM + RAG)]
-        B5[Solution Applier Agent\n(LLM + GitHub API)]
-        B6[Solution Tester Agent\n(Pytest/Selenium)]
-        B7[Chat Manager\n(LLM + State)]
+        B1[Finder Agent]
+        B2[Detector Agent]
+        B3[Investigator Agent]
+        B4[Solution Provider]
+        B5[Solution Applier]
+        B6[Solution Tester]
+        B7[Chat Manager]
     end
     subgraph Shared Infrastructure
-        C1[ChromaDB\n(Global Memory)]
+        C1[ChromaDB]
         C2[State Manager]
-        C3[Neo4j\n(Knowledge Graph)]
+        C3[Neo4j]
     end
 
     A1 --> A2
@@ -47,6 +47,18 @@ graph TD
     %% User feedback
     B7 -->|Status/Report| A1
 ```
+
+## Agent Legend
+- **Finder Agent**: LLM, parses logs, finds failed tests
+- **Detector Agent**: LLM + Neo4j, locates failure points
+- **Investigator Agent**: LLM + diff/DOM, analyzes root cause
+- **Solution Provider**: LLM + RAG, proposes fixes
+- **Solution Applier**: LLM + GitHub API, applies fixes
+- **Solution Tester**: Pytest/Selenium, validates fixes
+- **Chat Manager**: LLM + state, orchestrates agents
+- **ChromaDB**: Global memory
+- **State Manager**: Workflow state
+- **Neo4j**: Knowledge graph
 
 ## System Overview
 - **User/CI Pipeline**: Runs the test suite and provides logs/reports to the system.
